@@ -1,4 +1,4 @@
-" Sheldon Burks .vimrc
+" Sheldon Burks vimrc for windows
 " Contact Info: sheldon.burks@gmail.com
 " Github: aww.github.com/SheldonB
 
