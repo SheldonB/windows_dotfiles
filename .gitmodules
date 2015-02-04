@@ -1,0 +1,33 @@
+[submodule "vimfiles/bundle/ctrlp.vim"]
+	path = vimfiles/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vimfiles/bundle/delimitMate"]
+	path = vimfiles/bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+[submodule "vimfiles/bundle/nerdtree"]
+	path = vimfiles/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vimfiles/bundle/syntastic"]
+	path = vimfiles/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "vimfiles/bundle/tcomment_vim"]
+	path = vimfiles/bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "vimfiles/bundle/tlib_vim"]
+	path = vimfiles/bundle/tlib_vim
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "vimfiles/bundle/vim-addon-mw-utils"]
+	path = vimfiles/bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "vimfiles/bundle/vim-airline"]
+	path = vimfiles/bundle/vim-airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "vimfiles/bundle/vim-bufferline"]
+	path = vimfiles/bundle/vim-bufferline
+	url = https://github.com/bling/vim-bufferline.git
+[submodule "vimfiles/bundle/vim-snipmate"]
+	path = vimfiles/bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "vimfiles/bundle/vim-snippets"]
+	path = vimfiles/bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
