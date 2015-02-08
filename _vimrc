@@ -40,7 +40,8 @@ set hidden
 "not forsure what this does, will find out
 set lazyredraw
 
-
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 " List of All installed Plugins
 " T-Comment
 " NERDTree
@@ -117,6 +118,12 @@ nnoremap <leader>s :w<cr>
 
 "Shortcut to my .vimrc
 noremap <leader>rc :e $MYVIMRC<cr>
+
+"Make moving between splits easier
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "             Plugin Keybindings                 "
