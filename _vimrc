@@ -41,7 +41,12 @@ set hidden
 set lazyredraw
 
 filetype plugin on
+
 set omnifunc=syntaxcomplete#Complete
+
+"Save on focus lost
+:au FocusLost * :wa
+
 " List of All installed Plugins
 " T-Comment
 " NERDTree
@@ -59,7 +64,7 @@ set omnifunc=syntaxcomplete#Complete
 syntax enable
 
 "set up for GUI
-if has("gui_running") 
+if has("gui_running")
     set guioptions-=T
     autocmd GUIEnter * set vb t_vb=
     set backspace=2
@@ -75,7 +80,7 @@ endif
 let g:airline_powerline_fonts=1
 
 "set terminal colors to 256
-set t_Co=256
+"set t_Co=256
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 "             Text, tab, and indent                "
@@ -97,6 +102,9 @@ set wrap "Warp lines
 "turn matching parenthesis red
 hi MatchParen cterm=bold ctermbg=none ctermfg=red
 
+"Remove trailing whitespace
+nnoremap <leader>rtw :%s/\s\+$//e<CR>
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "              Custom Keybindings                "
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -113,12 +121,14 @@ inoremap jj <Esc>
 inoremap <Esc> <NOP>
 
 "Mapping for save
-inoremap <leader>s <esc>:w<cr>a
-nnoremap <leader>s :w<cr>
+inoremap <leader>s <esc>:wa<cr>a
+nnoremap <leader>s :wa<cr>
 
 "Shortcut to my .vimrc
 noremap <leader>rc :e $MYVIMRC<cr>
 
+"Mapping for delete buffer
+noremap <leader>d :bd<cr>
 "Make moving between splits easier
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -132,7 +142,7 @@ map <C-l> <C-W>l
 noremap <leader>c :TComment<cr>
 
 "NERDtree Bindings
-noremap <C-n> :NERDTreeToggle<cr> 
+noremap <C-n> :NERDTreeToggle<cr>
 
 "CtrlP Bindings
 inoremap <leader>cb <esc>:CtrlPBuffer<cr>a
